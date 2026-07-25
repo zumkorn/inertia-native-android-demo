@@ -9,6 +9,7 @@ import dev.hotwire.core.turbo.config.PathConfiguration
 import dev.inertia.demo.bridge.AlertComponent
 import dev.inertia.demo.bridge.ButtonComponent
 import dev.inertia.demo.bridge.FormComponent
+import dev.inertia.demo.bridge.HapticComponent
 import dev.inertia.demo.bridge.MenuComponent
 import dev.inertia.demo.bridge.OverflowMenuComponent
 import dev.inertia.demo.features.imageviewer.ImageViewerFragment
@@ -42,6 +43,7 @@ class DemoApplication : Application() {
             BridgeComponentFactory("alert", ::AlertComponent),
             BridgeComponentFactory("button", ::ButtonComponent),
             BridgeComponentFactory("form", ::FormComponent),
+            BridgeComponentFactory("haptic", ::HapticComponent),
             BridgeComponentFactory("menu", ::MenuComponent),
             BridgeComponentFactory("overflow-menu", ::OverflowMenuComponent)
         )
