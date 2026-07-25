@@ -6,6 +6,7 @@ import dev.hotwire.core.bridge.BridgeComponentFactory
 import dev.hotwire.core.bridge.KotlinXJsonConverter
 import dev.hotwire.core.config.Hotwire
 import dev.hotwire.core.turbo.config.PathConfiguration
+import dev.inertia.demo.bridge.AlertComponent
 import dev.inertia.demo.bridge.ButtonComponent
 import dev.inertia.demo.bridge.FormComponent
 import dev.inertia.demo.bridge.MenuComponent
@@ -38,6 +39,7 @@ class DemoApplication : Application() {
 
         // Register bridge components
         Hotwire.registerBridgeComponents(
+            BridgeComponentFactory("alert", ::AlertComponent),
             BridgeComponentFactory("button", ::ButtonComponent),
             BridgeComponentFactory("form", ::FormComponent),
             BridgeComponentFactory("menu", ::MenuComponent),
